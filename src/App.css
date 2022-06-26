@@ -3,7 +3,7 @@
   --numColor : hsl(232, 13%, 33%);
   --accentColor : hsl(233, 13%, 49%);
   --light : hsl(240, 62%, 92%);
-  --veryLight : hsl(240, 53%, 97%);
+  --veryLight : hsl(240, 54%, 95%);
   --textColor : rgb(121, 111, 232);
 }
 
@@ -71,7 +71,7 @@
 .btnCenter{
   background: var(--veryLight);
   color: var(--textColor);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 .btnCenter:hover{

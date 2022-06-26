@@ -25,12 +25,12 @@ const  App = () =>{
             </div>
           </div>
 
-          <div class="row g-0 align-items-center justify-content-center">
-            <div class="col-8 col-lg-4 col-xl-3">
-              <div class="card border-0">
+          <div class="row g-0 align-items-center justify-content-center ">
+            <div class="col-8 col-lg-3 col-xl-3 my-3">
+              <div class="card g-3 border-0">
                 <div class="card-body text-center py-4 rounded">
                   <h4 class="card-title fw-bold accentColor">Basic</h4>
-                  <p class="display-4 my-4  fw-bold numColor">{ toggle ? '$19.99' : '$199.99' }</p>
+                  <p class="display-5 my-4  fw-bold numColor">{ toggle ? '$19.99' : '$199.99' }</p>
                   <ul class="list-group list-group-flush d-lg-block">
                     <li class="list-group-item"></li>
                     <li class="list-group-item fs-6 fw-bold accentColor">  500 GB Storage</li>
@@ -38,15 +38,15 @@ const  App = () =>{
                     <li class="list-group-item fs-6 fw-bold accentColor">Send up to 3 GB</li>
                     <li class="list-group-item"></li>
                   </ul>
-                  <a href="#" className='btn btn-lg mt-3 d-lg-block btnSide'>Learn More</a>
+                  <a href="#" className='btn mt-3 d-lg-block d-block btnSide'>Learn More</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-9 col-lg-4 center">
+            <div class="col-8 col-lg-3 my-2  shadow  center">
                 <div class="card-body text-center py-5 mainColor rounded">
                   <h4 class="card-title fw-bold light">Professional</h4>
-                  <p class="display-4 my-4 text-light fw-bold"> { toggle ? '$18.99' : '$249.99' } </p>
+                  <p class="display-5 my-4 text-light fw-bold"> { toggle ? '$18.99' : '$249.99' } </p>
                   <ul class="list-group list-group-flush d-lg-block">
                     <li class="list-group-item mainColor border-light"></li>
                     <li class="list-group-item fs-6 fw-bold light mainColor border-light">1 TB Storage</li>
@@ -54,17 +54,17 @@ const  App = () =>{
                     <li class="list-group-item fs-6 fw-bold light mainColor border-light">Send up to 10 GB</li>
                     <li class="list-group-item fs-6 fw-bold mainColor border-light"></li>
                   </ul>
-                  <a href="#" class="btn btn-lg mt-3 d-lg-block btnCenter">
+                  <a href="#" class="btn  mt-3 d-lg-block d-block btnCenter">
                     Learn More
                   </a>
                 </div>
             </div>
 
-            <div class="col-8 col-lg-4 col-xl-3">
-              <div class="card border-0">
+            <div class="col-8 col-lg-3 col-xl-3 my-3">
+              <div class="card g-3 border-0">
                 <div class="card-body text-center py-4 rounded">
-                  <h4 class="card-title fw-bold accentColor">Master</h4>
-                  <p class="display-4 my-4  fw-bold numColor">{ toggle ? '$39.99' : '$399.99' }</p>
+                  <h4 class="card-title my-3 fw-bold accentColor">Master</h4>
+                  <p class="display-5 my-4  fw-bold numColor">{ toggle ? '$39.99' : '$399.99' }</p>
                   <ul class="list-group list-group-flush d-lg-block">
                     <li class="list-group-item"></li>
                     <li class="list-group-item fs-6 fw-bold accentColor">2 TB Storage</li>
@@ -72,14 +72,13 @@ const  App = () =>{
                     <li class="list-group-item fs-6 fw-bold accentColor">Send up to 20 GB</li>
                     <li class="list-group-item"></li>
                   </ul>
-                  <a href="#" class="btn btn-lg mt-3 d-lg-block btnSide">
+                  <a href="#" class="btn my-2 d-lg-block d-block btnSide">
                     Learn More
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
         </div> 
         {/* end container  */}
       </section>
