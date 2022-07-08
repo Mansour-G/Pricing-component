@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+:root{
+  --mainColor :  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(163,168,240,1) 0%, rgba(105,111,221,1) 100%);
+  --numColor : hsl(232, 13%, 33%);
+  --accentColor : hsl(233, 13%, 49%);
+  --light : hsl(240, 62%, 92%);
+  --veryLight : hsl(240, 54%, 95%);
+  --textColor : rgb(121, 111, 232);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.bgRight{
+  background: url(./assets/bg-bottom.svg);
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  top: 53%;
+  background-repeat: no-repeat;
+}
+.bgLeft {
+    background: url(./assets/bg-top.svg);
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    right: 0px;
+    top: 0%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.mainColor{
+  background: var(--mainColor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.numColor{
+  color: var(--numColor);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.accentColor{
+  color: var(--accentColor);
+}
+.bgColor{
+  background: var(--veryLight);
 }
 
-.App-link {
-  color: #61dafb;
+.light{
+  color: var(--veryLight);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.butn:hover{
+  color: var(--mainColor);
+  background: var(--light);
+  border: 1px solid var(--mainColor);
+}
+
+.btnSide{
+  background: var(--mainColor);
+  color: var(--veryLight);
+  font-weight: bold;
+}
+.btnSide:hover{
+  border: 1px solid var(--textColor);
+  color: var(--textColor);
+  background: white;
+  transition:  ease-in .3s;
+
+}
+.center{
+  z-index: 2;
+}
+.btnCenter{
+  background: var(--veryLight);
+  color: var(--textColor);
+  font-size: 18px;
+  font-weight: bold;
+}
+.btnCenter:hover{
+  border: 1px solid var(--veryLight);
+  color: var(--veryLight);
+  background: var(--mainColor);
+  transition:  ease-in .3s;
 }
